@@ -16,10 +16,10 @@ And /^I should see a '([^']*)' notice$/ do |msg|
   page.should have_content(msg)
 end
 
-And /^"([^"]*)" should be listed$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+And /^"([^"]*)" should be listed$/ do |name|
+  page.should have_content(name)
 end
 
-And /^"([^"]*)" should not be listed$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+And /^"([^"]*)" should not be listed$/ do |name|
+  page.should_not have_content(name)
 end

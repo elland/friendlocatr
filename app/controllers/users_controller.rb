@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to root_path, notice: 'Successfully added friend!'
     else
-      redirect_to root_path, alert: "Error adding friend: #{@user.errors.full_messages.to_sentence}"
+      redirect_to root_path, alert: "Error adding friend: invalid coordinates"
     end
   end
 end

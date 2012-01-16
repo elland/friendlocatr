@@ -4,3 +4,20 @@
     =f.input :latitude, :label => 'Latitude'
     =f.input :longitude, :label => 'Longitude'
     =f.submit 'Add friend'
+
+-if @users
+  #users
+    %table{border: 1, cellpadding: 5}
+      %thead
+        %tr
+          %th Name
+          %th Latitude
+          %th Longitude
+      %tbody
+        -@users.each do |user|
+          %tr
+            %td=user.name
+            %td=user.latitude
+            %td=user.longitude
+
+

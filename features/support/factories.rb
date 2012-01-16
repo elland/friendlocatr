@@ -4,4 +4,10 @@ FactoryGirl.define do
     latitude '10'
     longitude '10'
   end
+
+  factory :invalid_friend, :class => User do
+    name 'Invalid Friend'
+    latitude '150'
+    longitude '200'
+  end
 end

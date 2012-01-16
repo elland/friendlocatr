@@ -12,5 +12,5 @@ Feature: Add friend
   Scenario: Add an invalid coordinate
     Given that I visit the homepage
     When I enter "Invalid Friend"
-    Then I should see a 'Error adding friend, invalid coordinates' notice
+    Then I should see a 'Error adding friend: invalid coordinates' notice
     And "Invalid Friend" should not be listed
