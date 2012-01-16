@@ -55,14 +55,14 @@ end
 
 And /^there are (\d+) friends$/ do |n|
   n.to_i.times do |n|
-    user=FactoryGirl.build(:valid_friend, :name => "Valid Friend #{n}")
+    user=FactoryGirl.build(:valid_friend, :name => "Valid Friend #{n}", :latitude => (10+(n*10)))
     user.save
   end
 end
 
 And /^there are many friends$/ do
   10.times do |n|
-    user=FactoryGirl.build(:valid_friend, :name => "Valid Friend #{n}")
+    user=FactoryGirl.build(:valid_friend, :name => "Valid Friend #{n}", :latitude => (10*n))
     user.save
   end
 end

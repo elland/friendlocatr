@@ -8,6 +8,7 @@ gem 'rails', '3.1.1'
 gem 'sqlite3'
 gem 'haml'
 gem 'simple_form'
+gem 'squeel'
 
 
 # Gems used only for assets and not required

@@ -16,7 +16,7 @@ Feature: Show nearest friends
     When I click "Show nearest friends"
     Then I should see the following table rows
       | Valid Friend 0 | 10 | 10 |
-      | Valid Friend 1 | 10 | 10 |
+      | Valid Friend 1 | 20| 10 |
 
 
   Scenario: Only 3 friends
@@ -25,14 +25,14 @@ Feature: Show nearest friends
     When I click "Show nearest friends"
     Then I should see the following table rows
       | Valid Friend 0 | 10 | 10 |
-      | Valid Friend 1 | 10 | 10 |
-      | Valid Friend 2 | 10 | 10 |
+      | Valid Friend 1 | 20 | 10 |
+      | Valid Friend 2 | 30 | 10 |
 
   Scenario: Many friends
     Given I visit the homepage
     And there are many friends
     When I click "Show nearest friends"
     Then I should see the following table rows
-      | Valid Friend 0 | 10 | 10 |
+      | Valid Friend 0 | 0 | 10 |
       | Valid Friend 1 | 10 | 10 |
-      | Valid Friend 2 | 10 | 10 |
+      | Valid Friend 2 | 20 | 10 |
