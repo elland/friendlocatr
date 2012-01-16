@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20120116170130) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
-    t.integer  "lat"
-    t.integer  "lon"
+    t.integer  "latitude"
+    t.integer  "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

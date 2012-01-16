@@ -6,8 +6,8 @@ And /^I enter "([^"]*)"$/ do |user|
   @user = get_user(parse_name(user))
   within("#add_friend") do
     fill_in 'Name', :with => @user.name
-    fill_in 'Latitude', :with => @user.lat
-    fill_in 'Longitude', :with => @user.lon
+    fill_in 'Latitude', :with => @user.latitude
+    fill_in 'Longitude', :with => @user.longitude
     click_button 'Add friend'
   end
 end
