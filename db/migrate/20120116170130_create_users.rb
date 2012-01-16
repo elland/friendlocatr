@@ -2,8 +2,8 @@ class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
       t.string :name
-      t.integer :lat
-      t.integer :lon
+      t.integer :latitude
+      t.integer :longitude
 
       t.timestamps
     end
