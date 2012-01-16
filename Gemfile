@@ -21,7 +21,12 @@ gem 'jquery-rails'
 group :test do
   gem 'cucumber-rails'
   gem 'rspec-rails'
-  gem 'guard-rails'
+  gem 'guard-cucumber'
+  gem 'guard-rspec'
+  gem 'guard'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'shoulda'
   gem 'factory_girl'
   gem 'minitest'
 end
