@@ -14,6 +14,6 @@ class UsersController < ApplicationController
   end
 
   def nearest_friends
-    @friends = User.limit(3)
+    @friends = User.nearest.limit(3)
   end
 end
