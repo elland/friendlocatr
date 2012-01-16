@@ -12,15 +12,11 @@ And /^I enter "([^"]*)"$/ do |user|
   end
 end
 
-And /^I should see a 'Successfully added friend' notice$/ do
-  pending # express the regexp above with the code you wish you had
+And /^I should see a '([^']*)' notice$/ do |msg|
+  page.should have_content(msg)
 end
 
 And /^"([^"]*)" should be listed$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
-end
-
-And /^I should see a "([^"]*)"$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
 
