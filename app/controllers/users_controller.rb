@@ -12,4 +12,8 @@ class UsersController < ApplicationController
       redirect_to root_path, alert: "Error adding friend: invalid coordinates"
     end
   end
+
+  def nearest_friends
+    @friends = User.limit(3)
+  end
 end

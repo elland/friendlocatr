@@ -1,0 +1,14 @@
+-if @friends
+  %table
+    %thead
+      %tr
+        %th Name
+        %th Latitude
+        %th Longitude
+    %tbody
+      -@friends.each do |friend|
+        %tr
+          %td=friend.name
+          %td=friend.latitude
+          %td=friend.longitude
+
